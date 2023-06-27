@@ -1,0 +1,64 @@
+{% extends 'seller_header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+   </head>
+   <!-- body -->
+   <body>
+      
+      <!-- products -->
+      <div  class="products">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>My Products</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="our_products">
+                     <div class="row">
+                        
+                        <div class="col-md-6 margin_bottom1">
+                           <div class="product_box">
+                              <a href="">
+                              <figure><img src="{{product.product_image.url}}" alt="#" style="width: 400px; height: 400px;" /></figure>
+                              </a>
+                              <a href="{% url 'seller_edit_product' pk=product.pk %}"><input type="button" value="EDIT" class="btn btn-primary"></a>
+                              <a href="{% url 'seller_delete_product' pk=product.pk %}"><input type="button" value="DELETE" class="btn btn-danger"></a>
+                           </div>
+                        </div>
+
+                        <div class="col-md-6 margin_bottom1">
+                           <div class="product_box">
+                              <a href="">
+                              
+                              <h3>{{product.product_category}}</h3>
+                              <h3>{{product.product_name}}</h3>
+                              <h3>{{product.product_price}}</h3>
+                              <h3>{{product.product_desc}}</h3>
+                              <h3>{{product.discount}}%</h3>
+                              </a>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="col-md-12">
+                           <a class="read_more" href="#">See More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end products -->
+      
+   </body>
+</html>
+{% endblock %}
