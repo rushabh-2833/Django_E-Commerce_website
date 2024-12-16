@@ -14,9 +14,9 @@ A full-fledged E-Commerce Web Application built using Django. The website provid
 - **Frontend:** HTML, CSS (with Bootstrap for styling)
 
 **Folder Structure**
-**media/**: Stores uploaded media files like product images.
-**myapp/**: Contains the main application code (models, views, templates).
-**mysite/**: Django project folder that includes settings and URL configurations.
-**.gitignore:** Specifies files and directories to be ignored by Git.
-**db.sqlite3:** SQLite database file.
-**manage.py:** Command-line utility for running Django commands.
+- **media/**: Stores uploaded media files like product images.
+- **myapp/**: Contains the main application code (models, views, templates).
+- **mysite/**: Django project folder that includes settings and URL configurations.
+- **.gitignore:** Specifies files and directories to be ignored by Git.
+- **db.sqlite3:** SQLite database file.
+- **manage.py:** Command-line utility for running Django commands.
